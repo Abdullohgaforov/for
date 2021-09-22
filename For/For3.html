@@ -6,11 +6,23 @@
 </head>
 <body>
     <script>
-        while (true){
-            a=prompt("добавьте переменную")
-            x = parseInt(a) % 2
-            alert(x==0?"juft":"toq")
+        n1=parseInt(prompt("First number"))
+        dastamangiadad=-1
+        for (let i=0;i<n1;i++) {
+
+            c = (i + 1)
+            adadi_doxil_shudagi = prompt("i= " + c)
+            if (dastamangiadad > parseInt(adadi_doxil_shudagi) || dastamangiadad === -1) {
+                dastamangiadad = parseInt(adadi_doxil_shudagi)
+            }
         }
+        document.write(dastamangiadad)
+
+        // while (true){
+        //     a=prompt("добавьте переменную")
+        //     x = parseInt(a) % 2
+        //     alert(x==0?"juft":"toq")
+        // }
 
         // while (true){
         //     alert("основная формула A + B")
