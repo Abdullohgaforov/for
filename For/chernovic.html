@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chernovic</title>
+</head>
+<body>
+    <script>
+        const a = parseInt(prompt("A= "))
+        const b = parseInt(prompt("B= "))
+        let sum = 1
+        let process = ""
+        for (let i=a;i<=b;i++){
+            if (i <b) {
+                process+=i+" * "
+            } else {
+                process+=i+" = "
+
+            }
+            sum*=i
+        }
+        document.write(process+sum)
+    </script>
+</body>
+</html>

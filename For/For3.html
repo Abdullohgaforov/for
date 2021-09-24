@@ -6,41 +6,14 @@
 </head>
 <body>
     <script>
-        n1=parseInt(prompt("First number"))
-        dastamangiadad=-1
-        for (let i=0;i<n1;i++) {
-
-            c = (i + 1)
-            adadi_doxil_shudagi = prompt("i= " + c)
-            if (dastamangiadad > parseInt(adadi_doxil_shudagi) || dastamangiadad === -1) {
-                dastamangiadad = parseInt(adadi_doxil_shudagi)
-            }
+        const a= 1
+        const b= 9
+        let count=0
+        for(let i=a; i<=b; i++){
+            console.log(i)
+            count++
         }
-        document.write(dastamangiadad)
-
-        // while (true){
-        //     a=prompt("добавьте переменную")
-        //     x = parseInt(a) % 2
-        //     alert(x==0?"juft":"toq")
-        // }
-
-        // while (true){
-        //     alert("основная формула A + B")
-        //     a=prompt("добавьте 1-вую переменную")
-        //     b=prompt("добавьте 2-вую переменную")
-        //     x = parseInt(a) + parseInt(b)
-        //     alert(x)
-        // }
-
-        // let a = "    1   2   3   4   5   6   7   8   9"
-        // console.log(a)
-        // for(let i=1; i<=9; i++){
-        //     let line =(i).toString()
-        //     for(let a=1; a<=9; a++) {
-        //         line += " | "+(a*i).toString()
-        //     }
-        //     console.log(line)
-        // }
+        console.log("count = ", count)
     </script>
 </body>
 </html>

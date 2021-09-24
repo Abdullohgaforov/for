@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For 8</title>
+</head>
+<body>
+    <script>
+        const a = parseInt(prompt("A= "))
+        const b = parseInt(prompt("B= "))
+        let zarb = 1
+        let process = ""
+        for (let i=a;i<=b;i++){
+            if (i<=b) {
+                process+=i+" * "
+            }
+            else {
+                process+=i+" = "
+
+            }
+            zarb*=i
+        }
+        document.write(process+zarb)
+    </script>
+</body>
+</html>

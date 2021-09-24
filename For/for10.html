@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For 10</title>
+</head>
+<body>
+    <script>
+        const a = parseInt(prompt("A = "))
+        let sum = 1
+        let process = ""
+        for (let i=1;i<=a;i++){
+            if (i<2){
+                process+="1";
+                continue;
+            }
+            process+=" + 1/"+i
+            sum+=1/i
+        }
+        document.write(process+" = "+sum)
+    </script>
+</body>
+</html>
