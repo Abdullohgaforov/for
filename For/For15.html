@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For 15</title>
+</head>
+<body>
+    <script>
+        const a = parseInt(prompt("A ="))
+        const n = parseInt(prompt("N ="))
+        let process = ""
+        let zarb = 1
+        for(let i=n;i>0;i--){
+            zarb=a**n
+            if (i<n){
+                process+=a+"*"}
+            else {
+                process+=zarb+" = "
+            }
+        }
+        document.write(process+a)
+    </script>
+</body>
+</html>

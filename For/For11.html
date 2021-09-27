@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For 11</title>
+</head>
+<body>
+    <script>
+        const n = parseInt(prompt("A ="))
+        let sum = 0
+        let process  = ""
+        for (let i=0; i<=n; i++){
+            if (i<1){
+                sum+=n**2
+                process+=n**2
+                continue;
+            }
+            else {
+                process+="+("+n +"+"+ i+")"+"^2"
+            }
+            sum+=(n+i)**2
+        }
+        document.write(process+" = "+sum)
+    </script>
+</body>
+</html>
