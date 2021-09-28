@@ -2,16 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>For 13</title>
+    <title>For 16</title>
 </head>
 <body>
     <script>
-        const n =parseInt(prompt("N = "))
+        const a = parseInt(prompt("A = "))
+        const n = parseInt(prompt("N ="))
         let process = ""
-        let sum = 1
-        for (let i=1;i<=n;i=i+0.1){
-            sum*=-i
-            process+="+"+sum
+        for (let i=1;i<=n;i++){
+            process+=i+"^"+a+" _ "
         }
         document.write(process)
     </script>

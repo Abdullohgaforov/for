@@ -7,13 +7,16 @@
 <body>
     <script>
         const n =parseInt(prompt("N = "))
-        let zarb = 1
         let process = ""
-        for (let i=1;i<=n;i+=0.1){
-            process+=zarb+"."+i+"*"
+        for (let i=1;i<=n;i=i+0.1){
+            if (i<n){
+                process+=i+"*"
+            }
+            else {
+                process+="."
+            }
         }
-        zarb+=1+i
-        document.write(process+" = "+zarb)
+        document.write(process)
     </script>
 </body>
 </html>
