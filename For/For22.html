@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For 22</title>
+</head>
+<body>
+    <script>
+        const n = parseInt(prompt("N = "))
+        const x = parseInt(prompt("X = "))
+        let sum = 0
+        let zarb = 1
+        let one_sum = 1
+        for (let i=2;i<=n;i++){
+            zarb=zarb*i
+            sum+=x**i/zarb
+            one_sum=sum+x+1
+            console.log("factorial ="+zarb,";X^2 to N / (2! to N) ="+sum,";1 + X ="+one_sum)
+        }
+    </script>
+</body>
+</html>

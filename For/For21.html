@@ -2,23 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>For 19</title>
+    <title>For 21</title>
 </head>
 <body>
     <script>
         const n = parseInt(prompt("N = "))
-        let process = ""
+        let sum = 0
         let zarb = 1
+        let obshiy_sum = 1
         for (let i=1;i<=n;i++){
             zarb=zarb*i
-           if(i>=n) {
-               process+=i+" "
-           }
-           else{
-               process+=i+" * "
-           }
+            zarb=1/zarb
+            sum=sum+zarb
+            console.log(i+"! =",zarb)
         }
-        document.write(n+"! = "+process+" = "+zarb)
+        obshiy_sum+=sum
+        console.log("summa = "+sum+" + 1 = "+obshiy_sum)
     </script>
 </body>
 </html>
