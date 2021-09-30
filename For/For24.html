@@ -2,17 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>chernovic</title>
+    <title>For 24</title>
 </head>
 <body>
     <script>
         const n=parseInt(prompt("N = "))
         const x=parseInt(prompt("X = "))
-        let zarb = 1
         let sum = 0
-        for (let i=1;i<=n;i++){
-            zarb=zarb*i
+        for (let i=0;i<=n;i++){
+            let zarb = 1
+            for (let j=1;j<=2*i;j++){
+                zarb=zarb*j
+            }
+            sum+=(((-1)**i)*x**(2*i))/zarb
         }
+        console.log(sum)
     </script>
 </body>
 </html>
