@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For 31</title>
+</head>
+<body>
+    <script>
+        const n = parseInt(prompt("N = "))
+        let a = 2
+        let Ak = 0
+        for (let i=1;i<=n;i++){
+            Ak=2+(1/Ak)
+            continue
+            for (let k=2;k<=n;k++){
+                Ak=k-1
+            }
+            console.log(Ak)
+        }
+    </script>
+</body>
+</html>

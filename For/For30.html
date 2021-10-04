@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For 30</title>
+</head>
+<body>
+    <script>
+        let a
+        let b
+        do {
+            a=parseInt(prompt("A ="))
+            b=parseInt(prompt("B ="))
+            if (a>b){
+                alert("hato")
+            }
+        } while (a>b)
+        const n=parseInt(prompt("na skolko razdelit elementi"))
+        let zarb = 1
+        let tark = 0
+        let fx = 0
+        tark=(b-a)/n
+        for (let i=0;i<=n;i++){
+            zarb=a+i*tark
+            fx=1-Math.sin(zarb)
+            console.log(fx)
+        }
+    </script>
+</body>
+</html>
