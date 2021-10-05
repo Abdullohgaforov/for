@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For 38</title>
+</head>
+<body>
+    <script>
+        const n = parseInt(prompt("N = "))
+        let sum = 0
+        let javobi_daraja = 0
+        for (let i=1;i<=n;i++){
+            javobi_daraja = i ** (n-i+1)
+            sum+=javobi_daraja
+            console.log(javobi_daraja,sum)
+        }
+    </script>
+</body>
+</html>

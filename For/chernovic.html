@@ -5,15 +5,19 @@
     <title>chernovic</title>
 </head>
 <body>
-    <script>
-        const n = parseInt(prompt("N = "))
-        let Ak = 0
-        let A_digaro
-        console.log(Ak)
-        for (let k=2;k<=n;k++){
-            Ak=2+(1/k)
-            console.log(A_digaro)
-            }
-    </script>
+<script>
+    const n=parseInt(prompt("N = "))
+    let A = 0
+    let F1_peshina = 1
+    let F2_peshina = 1
+    console.log(F1_peshina)
+    console.log(F2_peshina)
+    for (let k=3;k<=n;k++){
+        A=F1_peshina + F2_peshina
+        F1_peshina = F2_peshina
+        F2_peshina = A
+        console.log(A)
+    }
+</script>
 </body>
 </html>

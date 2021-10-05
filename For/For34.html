@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For 34</title>
+</head>
+<body>
+    <script>
+        const n=parseInt(prompt("N = "))
+        let Ak = 0
+        let A1_peshina = 1
+        let A2_peshina = 2
+        console.log(A1_peshina)
+        console.log(A2_peshina)
+        for (let k=3;k<=n;k++){
+            Ak = (A1_peshina + 2 * A2_peshina)/3
+            A1_peshina = A2_peshina
+            A2_peshina = Ak
+            console.log(Ak)
+        }
+    </script>
+</body>
+</html>

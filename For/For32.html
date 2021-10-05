@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>For 31</title>
+    <title>For 32</title>
 </head>
 <body>
     <script>
         const n = parseInt(prompt("N = "))
         let A = 0
-        let A_peshina = 2
-        for (let k = 1; k <= n; k++) {
-            A = 2 + 1 / A_peshina
+        let A_peshina = 1
+        for (let k=1;k<=n;k++){
+            A = (A_peshina +1)/k
             A_peshina = A
             console.log(A)
         }
