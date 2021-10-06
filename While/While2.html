@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>While 2</title>
+</head>
+<body>
+    <script>
+        let a
+        let b
+        do {
+            a = parseInt(prompt("A = "))
+            b = parseInt(prompt("B = "))
+            if (a<b){
+                alert("Hato! boyad A > B boshad!")
+            }
+        }while (a<b)
+        let x = 0
+        console.log("adadi A = ",a)
+        console.log("adadi taqsim kadagish B = ",b)
+        while (b <= a){
+            a = a - b
+            console.log("chandbor kadagish = ",a)
+        }
+        console.log("baqiya mondagish = ",a)
+    </script>
+</body>
+</html>
