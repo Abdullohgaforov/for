@@ -6,20 +6,19 @@
 </head>
 <body>
     <script>
-        let a
-        let b
-        do {
-            a = parseInt(prompt("A = "))
-            b = parseInt(prompt("B = "))
-            if (a<b){
-                alert("Hato! boyad A > B boshad!")
-            }
-        }while (a<b)
-        let x = 0
-        while (b <= a){
-            a = a - b
+        function myFunc(theObject) {
+            theObject.make = 'Toyota';
         }
-        console.log(a)
+
+        var mycar = {make: 'Honda', model: 'Accord', year: 1998};
+        var x, y;
+
+        x = mycar.make; // x получает значение "Honda"
+
+        myFunc(mycar);
+        y = mycar.make; // y получает значение "Toyota"
+                        // (свойство было изменено функцией)
+
     </script>
 </body>
 </html>
