@@ -6,7 +6,6 @@
 </head>
 <body>
     <script>
-
         // const a = parseInt(prompt("A = "))
         // function add(a){
         //     let sum = 0
@@ -117,21 +116,125 @@
         // sum=sum_juft(a)
         // console.log(sum)
 
-        let z = 10;
-        function displayZ(){
+        // let z = 10;
+        // function displayZ(){
+        //
+        //     let z = 20;
+        //
+        //     {
+        //         let z = 30;
+        //         console.log("Block:", z);
+        //     }
+        //
+        //     console.log("Function:", z);
+        // }
+        //
+        // displayZ();
+        // console.log("Global:", z);
 
-            let z = 20;
+        // function hello(){
+        //     console.log("Hello Metanit.com");
+        // }
+        // hello();
+        // hello();
+        // hello();
 
-            {
-                let z = 30;
-                console.log("Block:", z);
+        // const a = parseInt(prompt("A="))
+        // const b = parseInt(prompt("B="))
+        // function zarb(a){
+        //     return function(b){return a*b}
+        // }
+        // var result = zarb(a)(b)
+        // document.write(result)
+
+        // function change(x){
+        //     x = 3 * x;
+        //     console.log("x in change:", x);
+        // }
+        //
+        // var n = 11;
+        // console.log("n before change:", n);
+        // change(n)
+        // console.log("n after change:", n)
+
+        // function change(user){
+        //     user.name = "1997";
+        // }
+        //
+        // var bob ={
+        //     age: "1994"
+        // };
+        // console.log("before change:", bob.age);
+        // change(bob);
+        // console.log("after change:", bob.name);
+
+        // while (true) {
+        //     const a = parseInt(prompt("A = "))
+        //     if (a < 2) {
+        //         alert("YES")
+        //     } else {
+        //         alert("ERROR")
+        //     }
+        // }
+
+        // const a = prompt("")
+        // for (let i = 1; i <= 20; i++) {
+        //     document.write(a)
+        // }
+
+        // function raqam(){
+        //     a=5
+        //     return a
+        // }
+        // a=x
+        // function zied(){
+        //     x++
+        // }
+        // zied()
+
+        // let person1 = new Person('Bob');
+        // let person2 = new Person('Sarah');
+        // function Person(name) {
+        //     this.name = name;
+        //     this.greeting = function() {
+        //         alert('Hi! I\'m ' + this.name + '.');
+        //     };
+        // }
+
+        // function Person(first, last, age, gender, interests) {
+        //     this.name = {
+        //         first : first,
+        //         last: last
+        //     };
+        //     this.age = age;
+        //     this.gender = gender;
+        //     this.interests = interests;
+        //     this.bio = function() {
+        //         alert(this.name.first + ' ' + this.name.last + ' is ' + this.age + ' years old. He likes '
+        //             + this.interests[0] + ' and ' + this.interests[1] + '.');
+        //     };
+        //     this.greeting = function() {
+        //         alert('Hi! I\'m ' + this.name.first + '.');
+        //     };
+        // }
+        //
+        // let person1 = new Person('Bob', 'Smith', 32, 'male', ['music', 'skiing']);
+
+        a = 0
+        function raqam(a = 0){
+            return function (step=1) {
+                a=a+step
+                console.log(a)
             }
-
-            console.log("Function:", z);
         }
-
-        displayZ();
-        console.log("Global:", z);
+        jam=raqam(a)
+        jam(6)
+        jam(a+6)
+        jam(a+6)
+        jam(a+6)
+        jam(5)
+        jam(a+5)
+        jam(a+5)
 
     </script>
 </body>
