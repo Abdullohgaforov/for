@@ -222,20 +222,36 @@
 
         a = 0
         function raqam(a = 0){
-            return function (step=1) {
-                a=a+step
+            this.step = 1
+            return (step = 1)=>{
+                a = a + this.step
+                if(isNaN(step)) {
+                    this.step = step
+                }else{
+
+                }
                 console.log(a)
             }
         }
         jam=raqam(a)
         jam(6)
-        jam(a+6)
-        jam(a+6)
-        jam(a+6)
+        jam()
+        jam()
+        jam()
         jam(5)
-        jam(a+5)
-        jam(a+5)
+        jam()
+        jam()
+        jam()
 
+        // function talaba(name,age,school){
+        //     this.name = name
+        //     this.age = age
+        //     this.school = school
+        //     this.bio = function () {
+        //         alert("My name is:" + this.name + "I'm" + this.age
+        //             + "years old." + "My school this:" + this.school)
+        //     }
+        // }
     </script>
 </body>
 </html>
