@@ -255,37 +255,6 @@
     // alert(raznie[1].name2)
     // raznie[2]()
 
-    function talaba(familiya,nom, sinf) {
-        this.baho_algebra = 0
-        this.baho_zabon = 0
-        this.familiya = familiya
-        this.nom = nom
-        this.sinf = sinf
-        return {
-            algebra: {
-                bafoMondani: (baho) => {
-                    this.baho_algebra = baho
-                },
-                bafoDidan: () => {
-                    console.log(this.familiya,this.nom, "bahoi algebra", this.baho_algebra, "sinfi:", this.sinf)
-                }
-            },
-            zabon:{
-                bafoMondan: (baho) => {
-                    this.baho_zabon = baho
-                },
-                bafoDidan: () => {
-                    console.log(this.familiya,this.nom, "bahoi zabon", this.baho_zabon, "sinfi:", this.sinf)
-                }
-            },
-        }
-    }
-
-    t = talaba("Gaforov","Abdulloh", "11-B")
-    t.algebra.bafoMondani(5)
-    t.zabon.bafoMondan(4)
-    t.algebra.bafoDidan()
-    t.zabon.bafoDidan()
 </script>
 </body>
 </html>

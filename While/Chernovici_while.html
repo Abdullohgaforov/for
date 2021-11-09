@@ -6,19 +6,49 @@
 </head>
 <body>
     <script>
-        function myFunc(theObject) {
-            theObject.make = 'Toyota';
+        function talaba(familiya, nom, sinf) {
+            this.familiya = familiya
+            this.nom = nom
+            this.sinf = sinf
+            ani_talaba=this
+            return {
+                algebra: {
+                    baho: 0,
+                    test1: function (baho) {
+                      this.baho = baho
+                    },
+                    bahoDidan: function() {
+                        console.log(ani_talaba.familiya,ani_talaba.nom, "bahoi algebra", this.baho, "sinfi:", ani_talaba.sinf)
+                    }
+                },
+                zabon:{
+                    baho: 0,
+                    test2: function (baho) {
+                        this.baho = baho
+                    },
+                    bahoDidan: function() {
+                        console.log(ani_talaba.familiya,ani_talaba.nom, "bahoi zabon", this.baho, "sinfi:", ani_talaba.sinf)
+                    }
+                },
+                fizika:{
+                    baho: 0,
+                    test3: function (baho) {
+                        this.baho = baho
+                    },
+                    bahoDidan: function () {
+                        console.log(ani_talaba.familiya,ani_talaba.nom, "bahoi fizika", this.baho, "sinfi:", ani_talaba.sinf)
+                    },
+                }
+            }
         }
 
-        var mycar = {make: 'Honda', model: 'Accord', year: 1998};
-        var x, y;
-
-        x = mycar.make; // x получает значение "Honda"
-
-        myFunc(mycar);
-        y = mycar.make; // y получает значение "Toyota"
-                        // (свойство было изменено функцией)
-
+        t = talaba("Gaforov","Abdulloh", "11-B")
+        t.algebra.test1(5)
+        t.zabon.test2(4)
+        t.fizika.test3(3)
+        t.algebra.bahoDidan()
+        t.zabon.bahoDidan()
+        t.fizika.bahoDidan()
     </script>
 </body>
 </html>
