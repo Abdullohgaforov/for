@@ -6,49 +6,64 @@
 </head>
 <body>
     <script>
-        function talaba(familiya, nom, sinf) {
-            this.familiya = familiya
-            this.nom = nom
-            this.sinf = sinf
-            ani_talaba=this
-            return {
-                algebra: {
-                    baho: 0,
-                    test1: function (baho) {
-                      this.baho = baho
-                    },
-                    bahoDidan: function() {
-                        console.log(ani_talaba.familiya,ani_talaba.nom, "bahoi algebra", this.baho, "sinfi:", ani_talaba.sinf)
-                    }
-                },
-                zabon:{
-                    baho: 0,
-                    test2: function (baho) {
-                        this.baho = baho
-                    },
-                    bahoDidan: function() {
-                        console.log(ani_talaba.familiya,ani_talaba.nom, "bahoi zabon", this.baho, "sinfi:", ani_talaba.sinf)
-                    }
-                },
-                fizika:{
-                    baho: 0,
-                    test3: function (baho) {
-                        this.baho = baho
-                    },
-                    bahoDidan: function () {
-                        console.log(ani_talaba.familiya,ani_talaba.nom, "bahoi fizika", this.baho, "sinfi:", ani_talaba.sinf)
-                    },
-                }
-            }
-        }
+        // function talaba(familiya, nom, sinf) {
+        //     this.familiya = familiya
+        //     this.nom = nom
+        //     this.sinf = sinf
+        //     ani_talaba=this
+        //     return {
+        //         algebra: {
+        //             baho: 0,
+        //             test1: function (baho) {
+        //               this.baho = baho
+        //             },
+        //             bahoDidan: function() {
+        //                 console.log(ani_talaba.familiya,ani_talaba.nom, "bahoi algebra", this.baho, "sinfi:", ani_talaba.sinf)
+        //             }
+        //         },
+        //         zabon:{
+        //             baho: 0,
+        //             test2: function (baho) {
+        //                 this.baho = baho
+        //             },
+        //             bahoDidan: function() {
+        //                 console.log(ani_talaba.familiya,ani_talaba.nom, "bahoi zabon", this.baho, "sinfi:", ani_talaba.sinf)
+        //             }
+        //         },
+        //         fizika:{
+        //             baho: 0,
+        //             test3: function (baho) {
+        //                 this.baho = baho
+        //             },
+        //             bahoDidan: function () {
+        //                 console.log(ani_talaba.familiya,ani_talaba.nom, "bahoi fizika", this.baho, "sinfi:", ani_talaba.sinf)
+        //             },
+        //         }
+        //     }
+        // }
+        //
+        // t = talaba("Gaforov","Abdulloh", "11-B")
+        // t.algebra.test1(5)
+        // t.zabon.test2(4)
+        // t.fizika.test3(3)
+        // t.algebra.bahoDidan()
+        // t.zabon.bahoDidan()
+        // t.fizika.bahoDidan()
 
-        t = talaba("Gaforov","Abdulloh", "11-B")
-        t.algebra.test1(5)
-        t.zabon.test2(4)
-        t.fizika.test3(3)
-        t.algebra.bahoDidan()
-        t.zabon.bahoDidan()
-        t.fizika.bahoDidan()
+        function createUser(pName, pAge) {
+            return {
+                name: pName,
+                age: pAge,
+                displayInfo: function() {
+                    document.write("Имя: " + this.name + " возраст: " + this.age + "<br/>");
+                }
+            };
+        };
+        var tom = createUser("Tom", 26);
+        tom.displayInfo();
+        var alice = createUser("Alice", 24);
+        alice.displayInfo();
+
     </script>
 </body>
 </html>
