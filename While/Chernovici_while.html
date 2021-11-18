@@ -64,32 +64,83 @@
         // var alice = createUser("Alice", 24);
         // alice.displayInfo();
 
-        function User (name, age) {
-            this.name = name;
-            this.age = age;
-            this.go = function(){document.write(this.name + " идет <br/>");}
-            this.displayInfo = function(){
-                document.write("Имя: " + this.name + "; возраст: " + this.age + "<br/>");
-            };
-        }
-        User.prototype.maxage = 110;
+        // function User (name, age) {
+        //     this.name = name;
+        //     this.age = age;
+        //     this.go = function(){document.write(this.name + " идет <br/>");}
+        //     this.displayInfo = function(){
+        //         document.write("Имя: " + this.name + "; возраст: " + this.age + "<br/>");
+        //     };
+        // }
+        // User.prototype.maxage = 110;
+        //
+        // function Employee(name, age, comp){
+        //     User.call(this, name, age);
+        //     this.company = comp;
+        //     this.displayInfo = function(){
+        //         document.write("Имя: " + this.name + "; возраст: " + this.age + "; компания: " + this.company + "<br/>");
+        //     };        // }
+        // Employee.prototype = Object.create(User.prototype);
+        //
+        // var tom = new User("Том", 26);
 
-        function Employee(name, age, comp){
-            User.call(this, name, age);
-            this.company = comp;
-            this.displayInfo = function(){
-                document.write("Имя: " + this.name + "; возраст: " + this.age + "; компания: " + this.company + "<br/>");
-            };
-        }
-        Employee.prototype = Object.create(User.prototype);
+        // var bill = new Employee("Билл", 32, "Google");
+        // tom.go();
+        // bill.go();
+        // tom.displayInfo();
+        // bill.displayInfo();
+        // console.log(bill.maxage);
 
-        var tom = new User("Том", 26);
-        var bill = new Employee("Билл", 32, "Google");
-        tom.go();
-        bill.go();
-        tom.displayInfo();
-        bill.displayInfo();
-        console.log(bill.maxage);
+
+        // const person = {
+        //     name: "Tom",
+        //     hello(){
+        //         console.log("Привет");
+        //         let say = ()=> console.log('Меня зовут' + this.name);
+        //         say();
+        //     }
+        // }
+        // person.hello();
+
+        // let how = undefined
+        // let raqam = {
+        //     name: "Adulloh",
+        //     sayHi(){
+        //         console.log("Hi! I am" + this.name)
+        //     }
+        // };
+        // console.log(how?.name)
+        // console.log(raqam?.name)
+        // how?.sayHi()
+        // raqam?.sayHi()
+
+        class Person {
+            static pensiya = 65
+
+            constructor(name, age) {
+                this.name = name
+                this.age = age
+            }
+
+            print() {
+                console.log(`Имя: ${this.name}  Возраст: ${this.age}`);
+            }
+
+            static cancilator(person) {
+                if (this.pensiya > person.age) {
+                    const restAges = this.pensiya - person.age
+                    console.log(name,`Do pensi ostalos ${restAges} let`)
+                } else {
+                    console.log("Vi uje na pensii")
+                }
+            }
+        }
+        const tom = new Person("Abdulloh",17);
+        Person.cancilator(tom)
+        const bob = new Person("dada",66)
+        Person.cancilator(bob)
+
+
 
     </script>
 </body>
