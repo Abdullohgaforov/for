@@ -114,32 +114,79 @@
         // how?.sayHi()
         // raqam?.sayHi()
 
-        class Person {
-            static pensiya = 65
+        // class Person {
+        //     static pensiya = 65
+        //
+        //     constructor(name, age) {
+        //         this.name = name
+        //         this.age = age
+        //     }
+        //
+        //     print() {
+        //         console.log(`Имя: ${this.name}  Возраст: ${this.age}`);
+        //     }
+        //
+        //     static cancilator(person) {
+        //         if (this.pensiya > person.age) {
+        //             const restAges = this.pensiya - person.age
+        //             console.log(name,`Do pensi ostalos ${restAges} let`)
+        //         } else {
+        //             console.log("Vi uje na pensii")
+        //         }
+        //     }
+        // }
+        // const tom = new Person("Abdulloh",17);
+        // Person.cancilator(tom)
+        // const bob = new Person("dada",66)
+        // Person.cancilator(bob)
 
-            constructor(name, age) {
-                this.name = name
-                this.age = age
-            }
+        // class Person{
+        //     name;
+        //     age;
+        //
+        //     print(){
+        //         console.log(`Name: ${this.name} Age: ${this.age}`);
+        //     }
+        // }
+        // class Employee extends Person{
+        //     company;
+        //     work(){
+        //         console.log(`${this.name} works in ${this.company}`);
+        //     }
+        // }
+        //
+        // const tom = new Person();
+        // tom.name = "Tom";
+        // tom.age= 34;
+        // const bob = new Employee();
+        // bob.name = "Bob";
+        // bob.age = 36;
+        // bob.company = "Google";
+        // tom.print();
+        // bob.print();
+        // bob.work();
 
-            print() {
-                console.log(`Имя: ${this.name}  Возраст: ${this.age}`);
-            }
+        // class Person{
+        //     constructor(name, age){
+        //         this.name = name;
+        //         this.age = age;
+        //     }
+        //     print(){
+        //         console.log(`Имя: ${this.name}  Возраст: ${this.age}`);
+        //     }
+        //     static printClassInfo(){
+        //         console.log("Класс Person представляет человека");
+        //     }
+        // }
+        // Person.printClassInfo();
 
-            static cancilator(person) {
-                if (this.pensiya > person.age) {
-                    const restAges = this.pensiya - person.age
-                    console.log(name,`Do pensi ostalos ${restAges} let`)
-                } else {
-                    console.log("Vi uje na pensii")
-                }
-            }
+        function sum(a, b, c){
+            const d = a + b + c;
+            console.log(d);
         }
-        const tom = new Person("Abdulloh",17);
-        Person.cancilator(tom)
-        const bob = new Person("dada",66)
-        Person.cancilator(bob)
-
+        sum(1, 2, 3);
+        const nums = [4, 5, 6];
+        sum(...nums);
 
 
     </script>
