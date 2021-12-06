@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Draft</title>
+</head>
+<body>
+<!--<input type="search" id="searchTxt" onkeyup="Search(searchTxt.value)">-->
+<div id="list">
+    <p><span>HP</span>-<span>100$</span></p>
+</div>
+<script>
+    const slova = [{name: "HP", Price: "100$"},{name: "LG", Price: "200$"}]
+    // const poisk = slova.findIndex()
+    // console.log(poisk)
+    function Search(name,Price) {
+        this.Price = Price
+        document.write(this.Price)
+        return Price
+    }
+    console.log(Search("HP",))
+
+    var searchTxt = document.getElementById("searchTxt")
+</script>
+</body>
+</html>
